@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<title>银行储蓄卡管理系统</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+			<link rel="stylesheet" href="css/common.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">X X 银行储蓄卡管理系统</a>
+		    </div>
+		  </div>
+		</nav>
+		<div class="container">
+			<form class="signupForm" action="cardlogin.php" method="post"  onSubmit="return beforeSubmit(this);">
+			  	<div class="form-group">
+			    	<label for="cardNum">卡号：</label>
+			    	<input type="text" class="form-control" id="cardNum" name="cardNum" placeholder="请输入8位卡号">
+			  	</div>
+			  	<div class="form-group">
+			    	<label for="password">密码：</label>
+			    	<input type="password" class="form-control" id="password" name="password" placeholder="请输入6位密码">
+			  	</div>
+			  	<button type="submit" class="btn btn-primary btn-lg btn-block">登录</button>
+			</form>
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/login.js"></script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<title>银行储蓄卡管理系统</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+			<link rel="stylesheet" href="css/common.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">X X 银行储蓄卡管理系统</a>
+		    </div>
+		  </div>
+		</nav>
+		<div class="container">
+			<form class="signupForm" action="cardsignup.php" method="post"  onSubmit="return beforeSubmit(this);">
+			  	<div class="form-group">
+			    	<label for="cardNum">卡号：</label>
+			    	<input type="text" class="form-control" id="cardNum" name="cardNum" placeholder="请输入8位卡号">
+			  	</div>
+			  	<div class="form-group">
+			    	<label for="password1">设置密码：</label>
+			    	<input type="password" class="form-control" id="password1" name="password1" placeholder="请输入6位密码">
+			  	</div>
+			  	<div class="form-group">
+			    	<label for="password2">重复密码：</label>
+			    	<input type="password" class="form-control" id="password2" name="password2" placeholder="请重复输入6位密码">
+			  	</div>
+			  	<div class="form-group">
+			    	<label for="startmoney">初始金额：</label>
+			    	<input type="number" step="0.01" class="form-control" id="startmoney" name="startmoney" placeholder="初始金额不得小于0或大于10万">
+			  	</div>
+			  	<div class="form-group">
+			    	<label for="username">开户人：</label>
+			    	<input type="text" class="form-control" id="username" name="username" placeholder="开户人姓名不超过10个字">
+			  	</div>
+			  	<button type="submit" class="btn btn-primary btn-lg btn-block">注册</button>
+			</form>
+		</div>
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/signup.js"></script>
+</html>
