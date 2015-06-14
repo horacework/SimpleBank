@@ -2,7 +2,7 @@
 A very simple bank web for my curriculum design
 
 
-#广东某工业大学Andriod课程设计
+#广东某工业大学数据库课程设计
 
 基本功能如下：
 
