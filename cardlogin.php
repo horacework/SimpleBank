@@ -19,7 +19,7 @@
 	
 	include("connect.php");
 	
-	$sql = "SELECT * from user where cardNum=".$_POST[cardNum];
+	$sql = "SELECT * from user where isDel=0 and cardNum=".$_POST[cardNum];
 	
 	$result = mysql_query($sql);
 	$userInfo = mysql_fetch_array($result);

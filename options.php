@@ -26,6 +26,16 @@
 		      <a class="navbar-brand" href="#">X X 银行储蓄卡管理系统</a>
 		    </div>
 			<div class="navbar-header navbar-right">
+		      <a role="button" id="logoutBtn" class="btn btn-warning headBtn" href="javascript:" onclick="if(confirm('确认退出登录？'))location.href='logout.php';">
+				  退出账号
+			  </a>
+		    </div>
+			<div class="navbar-header navbar-right">
+		      <a role="button" id="cancelBtn" class="btn btn-danger headBtn" href="javascript:" onclick="if(confirm('确认需要注销整个账号？'))location.href='canceluser.php';">
+				  注销账号
+			  </a>
+		    </div>
+			<div class="navbar-header navbar-right">
 		      <a class="navbar-brand" href="#">您好，<?php echo $_SESSION['username']; ?></a>
 		    </div>
 		  </div>

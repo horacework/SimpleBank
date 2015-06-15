@@ -1,6 +1,10 @@
 body{
 	font-family: "微软雅黑";
 }
+.headBtn{
+	margin-top: 7px;
+	margin-left: 6px;
+}
 .indexBlock{
 	width: 500px;
 	height: 350px;
@@ -46,4 +50,14 @@ body{
 	font-size: 80px;
 	line-height: 250px;
 	text-align: center;
+}
+
+.btn-money{
+	margin-left: 10px;
+}
+.moneykeep{
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 60px;
+	padding:10px;
 }
