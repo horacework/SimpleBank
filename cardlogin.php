@@ -19,7 +19,7 @@
 	
 	include("connect.php");
 	
-	$sql = "SELECT * from user where isDel=0 and cardNum=".$_POST[cardNum];
+	$sql = "SELECT * from user where cardNum=".$_POST[cardNum];
 	
 	$result = mysql_query($sql);
 	$userInfo = mysql_fetch_array($result);
@@ -29,7 +29,12 @@
 		exit;
 	}
 	if($userInfo['password'] != $_POST[password]){
-		echo "<script language=\"javascript\">alert(\"卡号或密码错误\");</script>";   
+		echo "<script language=\"javascript\">alert(\"密码错误\");</script>";   
+    	echo "<script language=\"javascript\">history.go(-1);</script>";
+		exit;
+	}
+	if($userInfo['isDel'] == 1){
+		echo "<script language=\"javascript\">alert(\"卡号已注销\");</script>";   
     	echo "<script language=\"javascript\">history.go(-1);</script>";
 		exit;
 	}

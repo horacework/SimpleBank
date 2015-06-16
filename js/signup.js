@@ -14,12 +14,12 @@ function beforeSubmit(form){
 		form.password2.focus();
 		return false;
 	}
-	if(form.startmoney.value==''){
-		alert('初始金额不能为空！');
+	if(form.startmoney.value=='' || form.startmoney.value <=0 ||form.startmoney.value >100000){
+		alert('初始金额非法！');
 		form.startmoney.focus();
 		return false;
 	}
-	if(form.username.value==''){
+	if(form.username.value=='' || form.username.value.length > 10){
 		alert('用户名不能为空！');
 		form.username.focus();
 		return false;

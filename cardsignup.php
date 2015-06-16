@@ -27,6 +27,16 @@
 	
 	$postTime = date('y-m-d h:i:s',time());
 	
+	$checkCard = mysql_query("SELECT * FROM user WHERE cardNum='$_POST[cardNum]'");
+	if (!$checkCard){
+	  die('哎呀！系统出错!');
+	}
+	$checkCardResult = mysql_fetch_array($checkCard);
+	if($checkCardResult[cardNum]!=null){
+		echo "<script language=\"javascript\">alert(\"卡号已存在\");</script>";   
+    	echo "<script language=\"javascript\">history.go(-1);</script>";
+		exit;
+	}
 	$sql1 = "
 	INSERT INTO user 
 	(cardNum,password,username)
