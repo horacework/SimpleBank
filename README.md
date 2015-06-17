@@ -1,6 +1,14 @@
 # SimpleBank
-A very simple bank web for my curriculum design
+A very simple bank web for my curriculum design.
 
+Project has been checked by teacher who was in charge.No more update , but still receives issue or PR.
+
+The improvement direction:
+1.Reorganizing redundant code
+2.Add new function
+3.Add comments
+
+If you need this project code to deal with your course design, please give me a star. thanks!
 
 #广东某工业大学数据库课程设计
 
